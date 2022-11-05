@@ -1,0 +1,21 @@
+#variable to define region of provider
+variable "region" {}
+
+
+#variable to define vpc_name/ cidr /
+variable "vpc_name" {}
+variable "cidr" {}
+
+#variable to define azs/ pub.pvt.data cidr
+variable "azs" {}
+variable "pub_cidr" {}
+variable "pvt_cidr" {}
+variable "data_cidr" {}
+
+
+
+
+
+
+
+

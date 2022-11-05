@@ -1,0 +1,54 @@
+output "vpc_name" {
+  value = aws_vpc.vpc_name.id
+}
+
+
+output "pubsubnet" {
+  value = aws_subnet.pubsubnet.*.id
+}
+output "pvtsubnet" {
+  value = aws_subnet.pvtsubnet.*.id
+}
+output "datasubnet" {
+  value = aws_subnet.datasubnet.*.id
+}
+output "igw" {
+  value = aws_internet_gateway.igw.id
+}
+output "natgw" {
+  value = aws_nat_gateway.natgw.id
+}
+output "eip" {
+  value = aws_eip.eip.id
+}
+
+output "pubroutetable" {
+  value = aws_route_table.pubroutetable.id
+}
+output "pvtroutetable" {
+  value = aws_route_table.pvtroutetable.id
+}
+output "dataroutetable" {
+  value = aws_route_table.dataroutetable.id
+}
+output "pubassociation" {
+  value = aws_route_table_association.pubassociation.*.id
+}
+output "pvtassociation" {
+  value = aws_route_table_association.pvtassociation.*.id
+}
+output "dataassociation" {
+  value = aws_route_table_association.dataassociation.*.id
+}
+
+
+
+
+
+
+
+
+
+
+
+
